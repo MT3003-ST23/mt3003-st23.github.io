@@ -1,5 +1,4 @@
 <!-- ./components/Toc.vue -->
-
 <script setup>
 // define links prop
 defineProps(["links"]);
