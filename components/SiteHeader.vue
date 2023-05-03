@@ -3,22 +3,46 @@
 <template>
   <header class="site-header">
     <div class="wrapper">
-      <NuxtLink to="/" class="no-underline">
-        <figure class="site-logo">
-          <h1>Site</h1>
-        </figure>
-      </NuxtLink>
+      <figure class="site-logo">
+        <h1>MT3003 ST23</h1>
+      </figure>
 
       <nav class="site-nav">
-        <ul class="links">
-          <li class="link">
-            <NuxtLink to="/blog">Blog</NuxtLink>
-          </li>
-        </ul>
+        <div class=" focus:ring-2 focus:ring-gray-200">
+          <button 
+          @click="() => hidden = !hidden"
+          type="button" class="md:hidden hover:bg-gray-200  rounded" >
+          <svg class="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+
+          <div class="w-full md:block md:w-auto"
+            @click="()=> hidden=true"
+            v-bind:class="{ hidden: hidden }">
+            <ul class="links absolute right-11 top-15 bg-gray-200 p-4 rounded
+            md:flex md:relative md:p-0 md:bg-transparent">
+              <li class="link">
+                <NuxtLink to="/">Hem</NuxtLink>
+              </li>
+              <li class="link">
+                <NuxtLink to="/schedule">Veckoschema</NuxtLink>
+              </li>
+              <li class="link">
+                <NuxtLink to="/lab">Laborationer</NuxtLink>
+              </li>
+              <li class="link">
+                <NuxtLink to="/project">Projekt</NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 </template>
+
+<script setup>
+const hidden = useState('toggled', () => true)
+</script>
 
 <style scoped>
 .site-header {
@@ -31,5 +55,16 @@
 
 .site-logo {
   @apply font-black text-lg;
+}
+
+.link{
+  @apply py-2 px-6 md:mr-4 md:p-0 last-of-type:mr-0
+}
+
+a {
+  @apply text-base font-bold
+}
+ul a.router-link-active {
+  @apply underline
 }
 </style>

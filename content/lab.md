@@ -1,15 +1,15 @@
 ---
-title: 'This is my third article!'
-description: 'You finally got the point about Nuxt content'
-img: 'img/cover (3).JPG'
-tags: [Nuxt, Content, Learning, third]
+title: 'Nuxt Content v2 is awesome!'
+description: 'This is my first article!'
+img: 'img/cover (1).JPG'
+tags: [Nuxt, Content, Learning, first]
 ---
 
-## My third blog post
+# My first blog post
 
-Welcome to my third blog post using [content v2 module](https://content.nuxtjs.org/)
+Welcome to my first blog post using [content v2 module](https://content.nuxtjs.org/)
 
-> Hey there! 👋🏾  This is my third blog post learning nuxt content.
+> Hey there! 👋🏾  This is my first blog post learning nuxt content.
 
 I'm currently building it using the following:
 
@@ -31,12 +31,13 @@ yarn dev -o
 
 ```ts
 // ./nuxt.config.ts
+
 export default defineNuxtConfig({
   // My Nuxt config
 })
 ```
 
-::InfoBox{type="error"}
+::InfoBox{type="warning"}
 Here's a handy bit of information for you!
 
 #details
@@ -56,7 +57,7 @@ npx nuxi init content-app -t content
 
 ## TailwindCSS
 
-Rapidly build modern websites without ever leaving your HTML. [TailwindCSS](https://tailwindcss.com/) is A utility-third CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.
+Rapidly build modern websites without ever leaving your HTML. [TailwindCSS](https://tailwindcss.com/) is A utility-first CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.
 
 ### TailwindCSS Typography
 

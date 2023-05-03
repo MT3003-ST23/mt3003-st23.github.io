@@ -1,15 +1,15 @@
 ---
-title: 'This is my second article!'
-description: 'Guess what? Nuxt content is awesome!'
-img: 'img/cover (2).JPG'
-tags: [Nuxt, Content, Learning, second]
+title: 'Nuxt Content v2 is awesome!'
+description: 'This is my first article!'
+img: 'img/cover (1).JPG'
+tags: [Nuxt, Content, Learning, first]
 ---
 
-## My second blog post
+# My first blog post
 
-Welcome to my second blog post using [content v2 module](https://content.nuxtjs.org/)
+Welcome to my first blog post using [content v2 module](https://content.nuxtjs.org/)
 
-> Hey there! 👋🏾  This is my second blog post learning nuxt content.
+> Hey there! 👋🏾  This is my first blog post learning nuxt content.
 
 I'm currently building it using the following:
 
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 })
 ```
 
-::InfoBox{type="info"}
+::InfoBox{type="warning"}
 Here's a handy bit of information for you!
 
 #details
@@ -57,7 +57,7 @@ npx nuxi init content-app -t content
 
 ## TailwindCSS
 
-Rapidly build modern websites without ever leaving your HTML. [TailwindCSS](https://tailwindcss.com/) is A utility-second CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.
+Rapidly build modern websites without ever leaving your HTML. [TailwindCSS](https://tailwindcss.com/) is A utility-first CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.
 
 ### TailwindCSS Typography
 

@@ -8,7 +8,6 @@
 
 * {
   @apply scroll-m-20;
-
 }
 
 html {
@@ -21,7 +20,7 @@ body {
 
 
 a {
-  text-decoration: underline;
+  text-decoration: no-underline;
 }
 
 
@@ -33,6 +32,7 @@ h5,
 h6 {
   @apply font-header;
 }
+
 
 .icon {
   @apply inline-flex w-6 h-6;
