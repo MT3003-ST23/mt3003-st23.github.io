@@ -4,7 +4,11 @@
   <header class="site-header">
     <div class="wrapper">
       <figure class="site-logo">
-        <h1>MT3003 ST23</h1>
+        <NuxtLink to="/">
+        <h1>
+        MT3003 ST23
+        </h1>
+        </NuxtLink>
       </figure>
 
       <nav class="site-nav">
@@ -53,9 +57,7 @@ const hidden = useState('toggled', () => true)
   @apply flex items-center justify-between max-w-6xl m-auto;
 }
 
-.site-logo {
-  @apply font-black text-lg;
-}
+
 
 .link{
   @apply py-2 px-6 md:mr-4 md:p-0 last-of-type:mr-0
@@ -64,6 +66,11 @@ const hidden = useState('toggled', () => true)
 a {
   @apply text-base font-bold
 }
+
+.site-logo a {
+  @apply font-black text-xl;
+}
+
 ul a.router-link-active {
   @apply underline
 }
