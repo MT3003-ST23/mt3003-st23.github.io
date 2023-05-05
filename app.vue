@@ -1,11 +1,9 @@
 <template>
-  <div>
     <SiteHeader />
     <div class="page-section prose prose-config">
       <NuxtPage />
     </div>
     <SiteFooter />
-  </div>
 </template>
 
 <!-- ./app.vue -->
@@ -20,7 +18,9 @@ useHead({
 
 <style scoped>
 .prose-config {
-  @apply prose-headings:my-[0.75rem] prose-h1:my-[1.5rem] first-of-type:prose-h1:mt-0 
-
+  @apply prose-headings:my-[0.75rem] prose-h1:my-[1.5rem]
+  prose-pre:bg-zinc-100 prose-pre:md:whitespace-normal
+  first-of-type:prose-h1:mt-0 prose-code:before:content-none
+  prose-code:after:content-none prose-code:bg-zinc-100 prose-code:p-[3px] prose-code:rounded
 }
 </style>

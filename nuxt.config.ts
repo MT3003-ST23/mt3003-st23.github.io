@@ -7,18 +7,17 @@ export default defineNuxtConfig({
     // https://content.nuxtjs.org/api/configuration
     documentDriven: true,
     highlight: {
-      theme: {
-        // Default theme (same as single string)
-        default: 'material-palenight',
-        // Theme used if `html.dark`
-        dark: 'github-dark',
-      }
+      theme:  'github-light',
     },
     markdown: {
+      remarkPlugin: [
+        'remark-highlight.js',
+      ],
       toc: {
         depth: 1,
         searchDepth: 1
       },
+      anchorLinks: false,
     }
   },
   tailwindcss: {

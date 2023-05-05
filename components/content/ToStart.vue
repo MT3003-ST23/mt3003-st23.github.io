@@ -6,7 +6,7 @@
 
 <style scoped>
 a {
-  @apply no-underline py-4 px-6 bg-indigo-700 rounded-lg border text-white
+  @apply no-underline py-4 px-6 bg-indigo-600 rounded-lg border text-white
   font-bold
   hover:bg-indigo-900
 }

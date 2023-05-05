@@ -5,6 +5,9 @@ module.exports = {
   content: [],
   theme: {
     extend: {
+      transitionProperty: {
+        'height': 'height'
+      },
       fontFamily: {
         'header': ['Cabinet Grotesk', ...defaultTheme.fontFamily.sans],
         'sans': ['Satoshi', ...defaultTheme.fontFamily.sans],

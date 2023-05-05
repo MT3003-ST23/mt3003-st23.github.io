@@ -1,64 +1,18 @@
----
-title: 'Nuxt Content v2 is awesome!'
-description: 'This is my first article!'
-img: 'img/cover (1).JPG'
-tags: [Nuxt, Content, Learning, first]
----
+# Projekt
 
-# My first blog post
+Kursen avslutas med en individuell projektuppgift där du själv väljer ett datamaterial och på ett pedagogiskt
+sätt i blogg-format beskriver hur några aspekter av detta material kan illustreras med R. Syftet med uppgiften är att ge dig möjlighet att demonstrera att du hanterar kursverktygen och detta är viktigare än att du hittar något intressant i ditt datamaterial. I omfattning skall projektet ungefär motsvara en av laborationerna 2-4 inklusive bonusuppgifter. 
 
-Welcome to my first blog post using [content v2 module](https://content.nuxtjs.org/)
+Vid val av datamaterial bör du tänka på följande:
 
-> Hey there! 👋🏾  This is my first blog post learning nuxt content.
+- Välj inte data som följer med R-paket, används i undervisnings eller tävligssammanhang. På webbsidor som till exempel [Kaggle](https://www.kaggle.com/) hittar du mängder av intressanta datamaterial (enligt sidan fler än 50 000), men det finns också mängder av publicerade analyser av dessa material tillgängliga (fler än 400 000). För att minimera risken för fri- eller ofrivilligt plagiat bör ni därför undvika dessa källor.
 
-I'm currently building it using the following:
+- Välj ett material som är lite utmanande, till exempel består av flera tabeller som behöver kombineras eller är sparat i ett lite knepigt format. Då blir det enklare att visa vad du kan.
 
-- Nuxt.js
-- Nuxt Content module
-- TailwindCSS
-  - TailwindCSS typography
+- Är du osäker, fråga på Discord!
 
-## Nuxt.js
+Deadline för färdigt projekt är 21/8, men innan 7/8 vill vi att ni kort beskriver era projektideer i en issue till ert projektbibliotek på GitHub. Vi kommer då återkomma med feedback.
 
-[Nuxt](https://nuxtjs.org/) is a powerful Vue framework that offers great development features such as server side rendering.
+Det färdiga projektet skall publiceras som filen `README.md` i ert projektbibliotek (`https://github.com/MT3003-ST23/pr_xxx`) med tillhörande datafiler och eventuella skript-filer. Om ni känner er begränsade av `.md`-formatet och föredrar `.html`, kontakta kursansvarig.
 
-```bash
-npx nuxi init nuxt-app
-cd nuxt-app
-yarn install
-yarn dev -o
-```
 
-```ts
-// ./nuxt.config.ts
-
-export default defineNuxtConfig({
-  // My Nuxt config
-})
-```
-
-::InfoBox{type="warning"}
-Here's a handy bit of information for you!
-
-#details
-This will be rendered inside the `description` slot. _It's important_ to see how this **works**.
-[More information can be found here](#)
-::
-
-## Nuxt content module
-
-Empower your NuxtJS application with [@nuxt/content module](https://content.nuxtjs.org/): write in a content/ directory and fetch your Markdown, JSON, YAML, XML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.
-
-You can get started with Nuxt Content by installing a fresh project
-
-```bash
-npx nuxi init content-app -t content
-```
-
-## TailwindCSS
-
-Rapidly build modern websites without ever leaving your HTML. [TailwindCSS](https://tailwindcss.com/) is A utility-first CSS framework packed with classes like `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.
-
-### TailwindCSS Typography
-
-[Typography](https://tailwindcss.com/docs/typography-plugin) is a plugin that provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don't control (like HTML rendered from Markdown, or pulled from a CMS).
