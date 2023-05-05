@@ -34,6 +34,9 @@ h6 {
 }
 
 
+pre {
+  display: flex;
+}
 .icon {
   @apply inline-flex w-6 h-6;
 }
