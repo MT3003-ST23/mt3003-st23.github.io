@@ -2,7 +2,7 @@
 <script setup>
 const tocOpen = ref(false)
 // define links prop
-defineProps(["links"]);
+const {links} = defineProps(["links"]);
 
 // flatten TOC links nested arrays to one array
 const tocToggle = () => {
@@ -23,10 +23,27 @@ const flattenLinks = (links) => {
 
   return _links;
 };
+
+const currentWeek = () => {
+  const now = new Date();
+  const startOfYear = new Date(now.getFullYear(), 0, 1);
+  const diff = now - startOfYear;
+  const oneWeek = 1000 * 60 * 60 * 24 * 7;
+  const weekOfYear = Math.floor(diff / oneWeek) + 1;
+
+  if (weekOfYear <= 23) return 23
+  if (weekOfYear >= 32) return 32
+  return weekOfYear
+}
+
+let todayLink = flattenLinks(links).map(link => link.id).filter(id =>
+id.includes(currentWeek()))[0]
+
+todayLink = (todayLink === undefined)? "": "#" + todayLink ;
 </script>
 
 <template>
-  <NuxtLink to="#v25-sammanfatta-en-tabell" class="w-fit mb-4 font-bold
+  <NuxtLink :to="todayLink" class="w-fit mb-4 font-bold
   bg-indigo-600 px-5 py-3 rounded-lg text-white
   hover:bg-indigo-900 no-underline cursor-pointer">Gå till idag</NuxtLink>
   <nav 
