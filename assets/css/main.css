@@ -26,10 +26,7 @@ a {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3{
   @apply font-header;
 }
 
@@ -37,6 +34,11 @@ h6 {
 pre {
   display: flex;
 }
+
+img {
+  display: inline;
+}
+
 .icon {
   @apply inline-flex w-6 h-6;
 }

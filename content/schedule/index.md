@@ -60,12 +60,12 @@ download.file("https://github.com/MT3003-ST22/data/raw/main/booli_ettor_2022-05-
 och läsa in den med
 
 ```r
-booli_ettor <- read_csv("data/booli_ettor_2022-05-19.csv")
+booli_ettor <- read.csv("data/booli_ettor_2022-05-19.csv")
 ```
 Notera att det går bra att läsa direkt från en url, som i
 
 ```r
-booli_ettor <- read_csv("https://github.com/MT3003-ST22/data/raw/main/booli_ettor_2022-05-19.csv")
+booli_ettor <- read.csv("https://github.com/MT3003-ST22/data/raw/main/booli_ettor_2022-05-19.csv")
 ```
 men vi föredrar att ladda ner filen en gång, då kan vi vara säkra på att vi arbetar med samma material nästa gång vi öppnar projektet. Använd din egen fantasi för att undersöka materialet med enkla figurer, till exempel kan du undersöka
 
@@ -230,7 +230,7 @@ Paketet `readr` följer amerikansk standard om du inte ber det göra något anna
 #####  Filformatet `.csv`
 
 `csv` står för *comma separated values* och är ett av de vanligaste formaten för att spara tabeller i en textfil. I en `csv`-fil motsvarar varje rad en rad i tabellen (översta raden består ofta av kolumnrubriker) och kommatecken används för att separera kolumner. Filen med innehåll 
-```
+```r
 x, y
 1, 2
 3, 4
@@ -244,7 +244,7 @@ readr::read_csv(
 3, 4")
 ```
 
-```
+```r
 ## # A tibble: 2 × 2
 ##       x     y
 ##   <dbl> <dbl>
@@ -261,7 +261,7 @@ readr::read_csv(
 3; 4")
 ```
 
-```
+```r
 ## # A tibble: 2 × 1
 ##   `x; y`
 ##   <chr> 
@@ -277,7 +277,7 @@ readr::read_csv2(
 3; 4")
 ```
 
-```
+```r
 ## # A tibble: 2 × 2
 ##       x     y
 ##   <dbl> <dbl>
@@ -293,7 +293,7 @@ När siffror kombineras med punkt, kommatecken och mellanslag gissar paketet `re
 readr::parse_number(c("3,14", "3 000"))
 ```
 
-```
+```r
 ## [1] 314   3
 ```
 med
@@ -303,7 +303,7 @@ readr::parse_number(c("3,14", "3 000"), locale = readr::locale(decimal_mark = ",
                                                                grouping_mark = " "))
 ```
 
-```
+```r
 ## [1]    3.14 3000.00
 ```
 
@@ -390,7 +390,7 @@ read_csv("https://www.statistikdatabasen.scb.se/sq/110673",
          skip = 1, locale = locale(encoding = "latin1"))
 ```
 
-```
+```r
 ## # A tibble: 2 × 8
 ##   kön     `1995` `1999` `2004` `2009` `2011` `2014` `2019`
 ##   <chr>    <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>
@@ -401,7 +401,7 @@ read_csv("https://www.statistikdatabasen.scb.se/sq/110673",
 innehåller antal svenska EU-parlamentariker efter kön och år. Använd `pivot_longer`, `pivot_wider`, `mutate` och `select` i en följd för att generera
 
 
-```
+```r
 ## # A tibble: 7 × 2
 ##   year  percent_female
 ##   <chr>          <dbl>
@@ -432,7 +432,7 @@ karta_lan <- st_read("LanSweref99TM/Lan_Sweref99TM_region.shp", quiet = TRUE)
 ggplot(karta_lan, aes(fill = LnNamn)) + geom_sf()
 ```
 
-<img src="https://raw.githubusercontent.com/MT3003-ST22/mt3003-st22.github.io/main/img/lan.png" width="50%" />
+<img src="/img/lan.png" width="50%" />
 
 
 Objektet `karta_lan` kan användas som en vanlig tabell/`tibble`. Det betyder att vi kan lägga till länsvisa variabler med `*_join` om vi vill färglägga efter något mer intressant än `LnNamn`. Prova tabellen med medelålder från tidigare övningar, en nyckel får du t.ex. genom att skapa en variabel `LnKod = str_sub(region, 1, 2)` i tabellen över medelålder.
@@ -451,7 +451,7 @@ votering_vild <- read_csv("http://data.riksdagen.se/voteringlista/?bet=&punkt=&p
 ```
 hämtar du de resultatet av de senaste 10000 rösterna lagda av V-ledamöter respektive politiska vildar i riksdagens voteringar (eftersom det finns fler V-ledamöter än vildar innehåller den andra fler voteringar). Återskapa motsvarigheten till nedanstående figur, som illustrerar de 10000 V-rösterna i förhållande till Aminehs röst
 
-![](schedule_files/figure-html/unnamed-chunk-26-1.png)<!-- -->
+![](/img/unnamed-chunk-26-1.png)<!-- -->
 
 Tips: Välj ut Aminehs röster ur `votering_vild` och skapa en ny tabell med kolumner `votering_id` och `rost` (den senare kan du gärna döpa om till `aminehs_rost`). Använd sedan lämplig `join` för att koppla ihop denna tabell med `votering_V` och illustrera.
 
@@ -491,7 +491,7 @@ read_lines("data/hemsoborna.txt", skip = 194, n_max = 21) %>%
   str_c(collapse = " ")
 ```
 
-```
+```r
 ## [1] "Han kom som ett yrväder en aprilafton och hade ett höganäskrus i en  \nsvångrem om halsen. Clara och Lotten voro inne med sköt-ekan att hämta  \nhonom på Dalarö brygga; men det dröjde evigheter, innan de kommo i båt.  \nDe skulle till handelsman och ha en tunna tjära och på abeteket och hämta  \ngråsalva åt grisen, och så skulle de på posten och få ett frimärke, och  \nså skulle de ner till Fia Lövström i Kroken och låna tuppen mot ett  \nhalvpund småtärna till notbygget, och sist hade de hamnat på  \ngästgivaregården, där Carlsson bjudit på kaffe med dopp. Och så kommo de  \näntligen i båt, men Carlsson ville styra, och det kunde han inte, för han  \nhade aldrig sett en råseglare förr, och därför skrek han, att de skulle  \nhissa focken, som inte fanns."
 ```
 
@@ -506,7 +506,7 @@ hemsoborna <- tibble(row = read_lines("data/hemsoborna.txt",
 hemsoborna
 ```
 
-```
+```r
 ## # A tibble: 5,088 × 2
 ##    row                   row_no
 ##    <chr>                  <int>
@@ -544,7 +544,7 @@ Vi kan nu få de vanligaste orden med
 hemsoborna_words %>% count(word, sort = TRUE)
 ```
 
-```
+```r
 ## # A tibble: 8,481 × 2
 ##    word      n
 ##    <chr> <int>
@@ -630,7 +630,7 @@ read_html(url) %>%
   html_table()
 ```
 
-```
+```r
 ## # A tibble: 94 × 7
 ##    Pl.   Land            Guld Silver Brons TAM    PEAM
 ##    <chr> <chr>          <int>  <int> <int> <chr> <int>
@@ -662,7 +662,7 @@ som returnerar medaljtabellen för OS-år `year` som nedan (glöm inte ta bort T
 get_medals(2016)
 ```
 
-```
+```r
 ## # A tibble: 264 × 4
 ##     year country        class  number
 ##    <dbl> <chr>          <chr>   <int>
@@ -712,7 +712,7 @@ som genererar följande
 read_gapminder("life_expectancy_years.csv")
 ```
 
-```
+```r
 ## # A tibble: 56,889 × 4
 ##    country     year  value variable             
 ##    <chr>       <chr> <dbl> <chr>                
@@ -757,7 +757,7 @@ response <- GET("https://api.pi.delivery/v1/pi?start=1&numberOfDigits=10")
 content(response)
 ```
 
-```
+```r
 ## $content
 ## [1] "1415926535"
 ```
@@ -771,7 +771,7 @@ response <- GET("http://api.nobelprize.org/v1/prize.csv?category=literature")
 content(response)
 ```
 
-```
+```r
 ## # A tibble: 119 × 8
 ##     year category   overallMotivation    id firstname  surname  motivation share
 ##    <dbl> <chr>      <lgl>             <dbl> <chr>      <chr>    <chr>      <dbl>
@@ -801,7 +801,7 @@ page <- read_html("<a> 1 </a> <b> 2 </b>")
 page
 ```
 
-```
+```r
 ## {html_document}
 ## <html>
 ## [1] <body>\n<a> 1 </a> <b> 2 </b>\n</body>
@@ -813,7 +813,7 @@ elements <- html_elements(page, css = "b")
 elements
 ```
 
-```
+```r
 ## {xml_nodeset (1)}
 ## [1] <b> 2 </b>
 ```
@@ -823,7 +823,7 @@ slutligen drar vi ut innehållet som text
 html_text(elements)
 ```
 
-```
+```r
 ## [1] " 2 "
 ```
 Svårigheten ligger i allmänhet att hitta en CSS-väljare som plockar ut precis vad vi vill ha. I övningen med OS-medaljer vill vi 
@@ -836,7 +836,7 @@ elements <- html_elements(page, css = "table")
 elements
 ```
 
-```
+```r
 ## {xml_nodeset (5)}
 ## [1] <table class="wikitable sortable"><tbody>\n<tr>\n<th>\n<span style="curso ...
 ## [2] <table class="navbox" style="border-spacing:0; ;"><tbody><tr><td style="p ...
@@ -850,7 +850,7 @@ Sidan innehåller fem tabeller där vi vill ha den första. Vi kan extrahera den
 html_table(elements[[1]])
 ```
 
-```
+```r
 ## # A tibble: 94 × 7
 ##    Pl.   Land            Guld Silver Brons TAM    PEAM
 ##    <chr> <chr>          <int>  <int> <int> <chr> <int>
@@ -873,7 +873,7 @@ elements <- html_elements(page, css = ".wikitable")
 html_table(elements)
 ```
 
-```
+```r
 ## [[1]]
 ## # A tibble: 94 × 7
 ##    Pl.   Land            Guld Silver Brons TAM    PEAM
@@ -902,7 +902,7 @@ elements <- html_elements(page, css = ".col-md-6")
 html_table(elements[[1]])
 ```
 
-```
+```r
 ## # A tibble: 33 × 10
 ##    `#`   ``    LAG   ``                M     V     O     F     `+/-` P    
 ##    <chr> <lgl> <chr> <chr>             <chr> <chr> <chr> <chr> <chr> <chr>
@@ -946,7 +946,7 @@ Vi kan nu lista databasens tabeller med
 DBI::dbListTables(con)
 ```
 
-```
+```r
 ## [1] "actors"           "directors"        "directors_genres" "movies"          
 ## [5] "movies_directors" "movies_genres"    "roles"
 ```
@@ -957,7 +957,7 @@ movies <- tbl(con, "movies")
 movies
 ```
 
-```
+```r
 ## # Source:   table<movies> [?? x 4]
 ## # Database: mysql  [guest@relational.fit.cvut.cz:NA/imdb_small]
 ##        id name             year  rank
@@ -980,7 +980,7 @@ Här noterar vi att antalet rader i tabellen är listat som `??`, vilket beror p
 collect(movies)
 ```
 
-```
+```r
 ## # A tibble: 36 × 4
 ##        id name             year  rank
 ##     <int> <chr>           <int> <dbl>
@@ -1007,7 +1007,7 @@ movies_genres %>%
   collect()
 ```
 
-```
+```r
 ## # A tibble: 6 × 5
 ##   movie_id genre  name         year  rank
 ##      <int> <chr>  <chr>       <int> <dbl>
@@ -1027,7 +1027,7 @@ movies_genres %>%
   show_query()
 ```
 
-```
+```r
 ## <SQL>
 ## SELECT `LHS`.*, `name`, `year`, `rank`
 ## FROM (

@@ -21,8 +21,6 @@ const flattenLinks = (links) => {
     })
     .flat(1);
 
-  console.log({ _links });
-
   return _links;
 };
 </script>
@@ -32,17 +30,18 @@ const flattenLinks = (links) => {
   bg-indigo-600 px-5 py-3 rounded-lg text-white
   hover:bg-indigo-900 no-underline cursor-pointer">Gå till idag</NuxtLink>
   <nav 
-  :class="{'h-fit': tocOpen}"
-  class="toc h-[78px]">
+  @click="tocToggle()"
+  :class="{'h-[40rem]': tocOpen,'h-[5rem]': !tocOpen}"
+  class="toc transition-all ease-in-out duration-[650ms]">
     <div class="flex justify-between border-b border-slate-200">
-      <header class="toc-header">
+      <header class="toc-header" >
         <h3 class="text-xl font-bold">Table of contents</h3>
       </header>
       <button
-      @click="tocToggle()"
       :class="{'rotate-180':tocOpen}"
-      class="py-3 h-fit">
-        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      class="py-3 h-fit rounded-xl ">
+        <svg data-accordion-icon class="w-8 h-8 hover:bg-gray-200 p-1
+        rounded-full shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
       </button>
     </div>
     <ul class="toc-links">

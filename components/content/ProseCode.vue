@@ -19,7 +19,7 @@ const props = withDefaults(
     <slot />
     <button 
     @click="copy(code)"
-    class="copy-button group-hover:opacity-100 hover:bg-zinc-200
+    class="copy-button group-hover:opacity-100 bg-gray-100 hover:bg-zinc-200
     rounded">
         <span v-if="!copied" class="icon-wrapper ">
         <svg data-v-edcae4a7="" data-v-82428261=""
