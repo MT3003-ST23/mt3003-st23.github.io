@@ -3,7 +3,19 @@
 ::ToStart
 ::
 
-På denna webbsida hittar du veckoplanering, laborationer och information till kursen Introduktion till databehandling (MT3003), sommarterminen 2023 vid Stockholms universitet.
+Välkommen till kursen introduktion till statistisk databehandling! Om du inte
+redan har tryckt på knappen "Börja Här" gör det!
+
+Vi kommer att täcka grundläggande statistiska koncept och metoder för att
+bearbeta och analysera data. Varje vecka erbjuds frivilliga övningar för att fördjupa förståelsen av
+kursmaterialet. Jag rekommenderar starkt att ni gör dessa uppgifter! Övningarna
+hittar ni under [Veckoschema](/schedule). Det finns 
+fyra obligatoriska **laborationer** och en **inlämningsuppgift**. Dessutom kommer det att finnasen **tentamen** mot slutet av kursen.
+För att klara kursen måste man framgångsrikt slutföra laborationerna, inlämningen och tentan.
+
+Nedan hittar du information gällande kursen. 
+
+**Introduktionsmöte 07/06/2023 (Onsdag) Kl 10:00-11:00** [*Zoom Länk*](https://stockholmuniversity.zoom.us/j/6254185246)
 
 # Viktiga Datum
 ## Deadlines för inlämningar av laborationer
@@ -25,10 +37,11 @@ Deadline individuell uppgift **20/08/2023**.
 # Kontakt
 
   - Kursansvarig: Taariq Nazar **taariq.nazar@math.su.se**
-  - TA:
-  - TA:
-  - TA:
+  - TA: Betty Frankl **betty.frankl@gmail.com**
+  - TA: Emil Erikson **emilerikson@outlook.com**
+  - TA: Jakob Torgander **jakob.torgander@math.su.se**
+  - TA: Leo Levenius **leo.levenius@gmail.com**
 
 ## Discord
 Här kan ni ställa alla era frågor.
-Link to discord channel
+https://discord.gg/S5hHteEuRQ
