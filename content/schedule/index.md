@@ -1,37 +1,7 @@
-Veckoschema
-================
-
-- <a href="#v23-introduktion-till-kursverktyg"
-  id="toc-v23-introduktion-till-kursverktyg"><strong>v23</strong>:
-  Introduktion till kursverktyg</a>
-- <a href="#v24-enkla-visualiseringar"
-  id="toc-v24-enkla-visualiseringar"><strong>v24</strong>: Enkla
-  visualiseringar</a>
-- <a href="#v25-sammanfatta-en-tabell"
-  id="toc-v25-sammanfatta-en-tabell"><strong>v25</strong>: Sammanfatta en
-  tabell</a>
-- <a href="#v26-utforska-data-med-visualiseringar"
-  id="toc-v26-utforska-data-med-visualiseringar"><strong>v26</strong>:
-  Utforska data med visualiseringar</a>
-- <a href="#v27-läsa-data-från-fil"
-  id="toc-v27-läsa-data-från-fil"><strong>v27</strong>: Läsa data från
-  fil</a>
-- <a href="#v28-omforma-och-sammanfläta-tabeller"
-  id="toc-v28-omforma-och-sammanfläta-tabeller"><strong>v28</strong>:
-  Omforma och sammanfläta tabeller</a>
-- <a href="#v29-arbeta-med-text-faktorer-och-datum"
-  id="toc-v29-arbeta-med-text-faktorer-och-datum"><strong>v29</strong>:
-  Arbeta med text, faktorer och datum.</a>
-- <a href="#v30-funktioner-och-iteration"
-  id="toc-v30-funktioner-och-iteration"><strong>v30</strong>: Funktioner
-  och iteration</a>
-- <a href="#v31-apier-databaser-och-webbskrap"
-  id="toc-v31-apier-databaser-och-webbskrap"><strong>v31</strong>: APIer,
-  databaser och webbskrap</a>
-- <a href="#v32-mer-om-visualisering"
-  id="toc-v32-mer-om-visualisering"><strong>v32</strong>: Mer om
-  visualisering</a>
-
+---
+title: "Veckoschema"
+layout: toc
+---
 ## **v23**: Introduktion till kursverktyg
 
 Den första veckan kommer innehålla administration och avslutas med en
@@ -39,7 +9,7 @@ provkörning av kursverktygen i laboration 1.
 
 ### Mål denna vecka
 
-- Dina kurskonto på [GitHub](https://github.com/) och [RStudio
+- Dina kurskonto på [GitHub](https://github.com/) och [Posit
   Cloud](https://rstudio.cloud/) skall vara kopplade till kursens
   arbetsytor.
 - Första laborationen inlämnad. (Deadline söndag).
@@ -53,7 +23,7 @@ provkörning av kursverktygen i laboration 1.
   från 2022.
 - [Kursverktyg och examination (YouTube,
   5:37)](https://youtu.be/qrgjCchBTWs)
-- [RStudio Cloud introduktion (YouTube,
+- [Posit Cloud introduktion (YouTube,
   12:52)](https://youtu.be/hsJTGkrsQkc)
 - [RMarkdown introduktion (YouTube,
   14:42)](https://youtu.be/Ckd3Yfkx5Hk)
@@ -61,9 +31,9 @@ provkörning av kursverktygen i laboration 1.
 - [Examination och betyg
   (kurshemsida)](https://kurser.math.su.se/pluginfile.php/140337/mod_resource/content/1/betygskriterier.pdf)
 
-*OBS: Introduktionerna till RStudio Cloud, RMarkdown och GitHub spelades
-in 2021. Utöver den uppenbara ändringen från ST21 till ST22 har det
-skett små förändringar i det grafiska gränssnittet till RSTudio Cloud.
+*OBS: Introduktionerna till Posit Cloud, RMarkdown och GitHub spelades
+in 2021. Utöver den uppenbara ändringen från ST21 till ST23 har det
+skett små förändringar i det grafiska gränssnittet till Posit Cloud.
 Detta bör inte orsaka problem.*
 
 ------------------------------------------------------------------------
@@ -80,7 +50,7 @@ Detta bör inte orsaka problem.*
 
 - R4DS: [Kapitel 2-4](https://r4ds.had.co.nz/introduction.html).
 
-RStudio Primers:
+Posit Primers:
 
 - [The Basics](https://rstudio.cloud/learn/primers/1) (Vizualisation och
   Programming)
@@ -91,7 +61,7 @@ RStudio Primers:
 Under rubriken övningar hittar du träningsmaterial som inte ingår i
 kursens examination. Detta ger bra övning inför inlämningsuppgifterna,
 med fördelen att du kan fråga och tipsa hur mycket du vill på kursens
-Discord. Skapa ett separat projekt i RStudio Cloud där du arbetar med
+Discord. Skapa ett separat projekt i Posit Cloud där du arbetar med
 övningar och skapa en mapp `data` i detta projekt där du kan spara de
 datamaterial vi använder.
 
@@ -103,7 +73,7 @@ blev som du tänkt.
 
 Du kan ladda ner en kopia av data från inlämningsuppgift 1 med
 
-``` r
+```r
 download.file("https://raw.githubusercontent.com/MT3003-ST23/data/master/booli_ettor_2023-05-28.csv",
               "data/booli_ettor_2023-05-28.csv")
 ```
@@ -234,7 +204,7 @@ gapminder <- read_csv("data/gapminder_2021-06-14.csv")
 
 - R4DS: [Kapitel 5-6](https://r4ds.had.co.nz/transform.html).
 
-RStudio Primers:
+Posit Primers:
 
 - [Isolating data with dplyr](https://rstudio.cloud/learn/primers/2.2)
 - [Deriving information with
@@ -335,7 +305,7 @@ vattnet. Vill du hämta aktuella data på samma format väljer du
   27](https://r4ds.had.co.nz/r-markdown.html) och [Kapitel
   28](https://r4ds.had.co.nz/graphics-for-communication.html).
 
-RStudio Primers:
+Posit Primers:
 
 - [Visualize Data](https://rstudio.cloud/learn/primers/3)
 
@@ -368,10 +338,11 @@ varje rad en rad i tabellen (översta raden består ofta av
 kolumnrubriker) och kommatecken används för att separera kolumner. Filen
 med innehåll
 
-    x, y
-    1, 2
-    3, 4
-
+```r
+x, y
+1, 2
+3, 4
+```
 motsvarar alltså tabellen
 
 ``` r
@@ -381,11 +352,14 @@ readr::read_csv(
 3, 4")
 ```
 
-    ## # A tibble: 2 × 2
-    ##       x     y
-    ##   <dbl> <dbl>
-    ## 1     1     2
-    ## 2     3     4
+``` r
+## # A tibble: 2 × 2
+##       x     y
+##   <dbl> <dbl>
+## 1     1     2
+## 2     3     4
+
+```
 
 Detta fungerar bra i engelskspråkiga länder där man använder punkt som
 decimaltecken. När man som i svensk standard använder kommatecken som
@@ -401,13 +375,16 @@ readr::read_csv(
 "x; y
 1; 2
 3; 4")
+
 ```
 
-    ## # A tibble: 2 × 1
-    ##   `x; y`
-    ##   <chr> 
-    ## 1 1; 2  
-    ## 2 3; 4
+``` r
+  ## # A tibble: 2 × 1
+  ##   `x; y`
+  ##   <chr> 
+  ## 1 1; 2  
+  ## 2 3; 4
+```
 
 Eftersom detta är vanligt förekommande finns en specialfunktion
 `read_csv2` som utgår ifrån att kolumner skiljs med semikolon och komma
@@ -420,11 +397,13 @@ readr::read_csv2(
 3; 4")
 ```
 
-    ## # A tibble: 2 × 2
-    ##       x     y
-    ##   <dbl> <dbl>
-    ## 1     1     2
-    ## 2     3     4
+``` r
+## # A tibble: 2 × 2
+##       x     y
+##   <dbl> <dbl>
+## 1     1     2
+## 2     3     4
+```
 
 ##### Decimaltecken igen
 
@@ -436,18 +415,19 @@ det lätt bli fel om vi slarvar med att ange lokala inställningar
 ``` r
 readr::parse_number(c("3,14", "3 000"))
 ```
+``` r
 
     ## [1] 314   3
-
+```
 med
 
 ``` r
 readr::parse_number(c("3,14", "3 000"), locale = readr::locale(decimal_mark = ",", 
                                                                grouping_mark = " "))
 ```
-
+``` r
     ## [1]    3.14 3000.00
-
+```
 Ibland får man lösa konverteringen själv. I data som matats in manuellt
 är det inte ovanligt att både punkt och kommatecken förekommer som
 decimaltecken om vartannat i samma fil. Då är det säkrare att läsa in
@@ -518,7 +498,7 @@ Fixa!
 
 - R4DS: [Kapitel 12-13](https://r4ds.had.co.nz/tidy-data.html)
 
-RStudio primers:
+Posit primers:
 
 - [Tidy your data](https://rstudio.cloud/learn/primers/4). **OBS**: I
   delen *Reshape Data* används funktionerna `gather` och `spread`, dessa
@@ -578,17 +558,19 @@ Tabellen
 read_csv("https://www.statistikdatabasen.scb.se/sq/110673", 
          skip = 1, locale = locale(encoding = "latin1"))
 ```
-
+``` r
     ## # A tibble: 2 × 8
     ##   kön     `1995` `1999` `2004` `2009` `2011` `2014` `2019`
     ##   <chr>    <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>
     ## 1 kvinnor      9      9     11     10      9     11     11
     ## 2 män         13     13      8      8     11      9      9
+```
 
 innehåller antal svenska EU-parlamentariker efter kön och år. Använd
 `pivot_longer`, `pivot_wider`, `mutate` och `select` i en följd för att
 generera
 
+``` r
     ## # A tibble: 7 × 2
     ##   year  percent_female
     ##   <chr>          <dbl>
@@ -599,6 +581,7 @@ generera
     ## 5 2011            45  
     ## 6 2014            55  
     ## 7 2019            55
+```
 
 #### Koroplet
 
@@ -692,7 +675,7 @@ faktorer och datum. Vi har redan stött på flera av dessa, t.ex. förekom
 `stringr::str_detect`, `forcats::fct_relevel` och `lubridate::yday` i
 Laboration 2. Funktionerna i `stringr` och `forcats` börjar alltid med
 `str_` respective `fct_` vilket gör det enkelt att leta efter dem i
-RStudios Console-fönster då man får upp en lista genom att inleda raden
+Posits Console-fönster då man får upp en lista genom att inleda raden
 med dessa tecken (skriv `lubridate::` för motsvarande lista för detta
 paket). Specifika övningar ges i kursboken, här ger vi ett exempel på
 hur man kan arbeta med textdata.
@@ -713,9 +696,9 @@ läsa ett valt stycke med
 read_lines("data/hemsoborna.txt", skip = 194, n_max = 21) %>% 
   str_c(collapse = " ")
 ```
-
+```r
     ## [1] "Han kom som ett yrväder en aprilafton och hade ett höganäskrus i en  \nsvångrem om halsen. Clara och Lotten voro inne med sköt-ekan att hämta  \nhonom på Dalarö brygga; men det dröjde evigheter, innan de kommo i båt.  \nDe skulle till handelsman och ha en tunna tjära och på abeteket och hämta  \ngråsalva åt grisen, och så skulle de på posten och få ett frimärke, och  \nså skulle de ner till Fia Lövström i Kroken och låna tuppen mot ett  \nhalvpund småtärna till notbygget, och sist hade de hamnat på  \ngästgivaregården, där Carlsson bjudit på kaffe med dopp. Och så kommo de  \näntligen i båt, men Carlsson ville styra, och det kunde han inte, för han  \nhade aldrig sett en råseglare förr, och därför skrek han, att de skulle  \nhissa focken, som inte fanns."
-
+```
 och spara hela boken i en tibble med
 
 ``` r
@@ -725,7 +708,7 @@ hemsoborna <- tibble(row = read_lines("data/hemsoborna.txt",
   mutate(row_no = 1:n())
 hemsoborna
 ```
-
+```r
     ## # A tibble: 5,088 × 2
     ##    row                   row_no
     ##    <chr>                  <int>
@@ -740,6 +723,7 @@ hemsoborna
     ##  9 "\n"                       9
     ## 10 "\nSTOCKHOLM"             10
     ## # ℹ 5,078 more rows
+```
 
 här har vi klippt bort text som inte hör till boken med `skip` och
 `n_max`, tagit bort tomma rader och lagt till radnummer. För att
@@ -763,7 +747,7 @@ Vi kan nu få de vanligaste orden med
 ``` r
 hemsoborna_words %>% count(word, sort = TRUE)
 ```
-
+```r
     ## # A tibble: 8,481 × 2
     ##    word      n
     ##    <chr> <int>
@@ -779,6 +763,7 @@ hemsoborna_words %>% count(word, sort = TRUE)
     ## 10 sig     509
     ## # ℹ 8,471 more rows
 
+```
 de flesta av dessa är så kallade stoppord, ord som är viktiga för att
 binda ihop texten men annars betydelsefattiga. För att ta bort dem
 hämtar vi en lista på svenska stoppord
@@ -869,7 +854,7 @@ read_html(url) %>%
   html_element(".wikitable") %>% 
   html_table()
 ```
-
+```r
     ## # A tibble: 94 × 7
     ##    Pl.   Land            Guld Silver Brons TAM    PEAM
     ##    <chr> <chr>          <int>  <int> <int> <chr> <int>
@@ -884,6 +869,7 @@ read_html(url) %>%
     ##  9 9     Tyskland          10     11    16 37        8
     ## 10 10    Italien           10     10    20 40        7
     ## # ℹ 84 more rows
+```
 
 En motsvarande tabell för t.ex. OS i Rio kan hämtas genom att byta
 `2020` mot `2016`.
@@ -903,7 +889,7 @@ du behöver bara kolumnerna `Land`, `Guld`, `Silver` och `Brons`.
 ``` r
 get_medals(2016)
 ```
-
+``` r
     ## # A tibble: 264 × 4
     ##     year country        class  number
     ##    <dbl> <chr>          <chr>   <int>
@@ -918,6 +904,7 @@ get_medals(2016)
     ##  9  2016 Kina           Brons      26
     ## 10  2016 Ryssland       Guld       19
     ## # ℹ 254 more rows
+```
 
 - Använd `map_df` med `seq(1948, 2020, by = 4)` och `get_medals` som
   argument för att skapa en tabell över medaljfördelningen för alla
@@ -956,7 +943,7 @@ som genererar följande
 ``` r
 read_gapminder("life_expectancy_years.csv")
 ```
-
+```r
     ## # A tibble: 56,889 × 4
     ##    country     year  value variable             
     ##    <chr>       <chr> <dbl> <chr>                
@@ -971,7 +958,7 @@ read_gapminder("life_expectancy_years.csv")
     ##  9 Afghanistan 1808   28.1 life_expectancy_years
     ## 10 Afghanistan 1809   28.1 life_expectancy_years
     ## # ℹ 56,879 more rows
-
+```
 här kan du ge kolumnen `variable` värdet `str_sub(file, 1, -5)`.
 
 - Skapa en tabell (samma fyra kolumner) med alla variabler genom att
@@ -1017,9 +1004,10 @@ library(httr)
 response <- GET("https://api.pi.delivery/v1/pi?start=1&numberOfDigits=10")
 content(response)
 ```
-
+```r
     ## $content
     ## [1] "1415926535"
+```
 
 ##### Nobel API
 
@@ -1036,7 +1024,7 @@ hämta resultatet till R
 response <- GET("http://api.nobelprize.org/v1/prize.csv?category=literature")
 content(response)
 ```
-
+``` r
     ## # A tibble: 119 × 8
     ##     year category   overallMotivation    id firstname  surname  motivation share
     ##    <dbl> <chr>      <lgl>             <dbl> <chr>      <chr>    <chr>      <dbl>
@@ -1051,6 +1039,7 @@ content(response)
     ##  9  2014 literature NA                  912 Patrick    Modiano  "\"for th…     1
     ## 10  2013 literature NA                  892 Alice      Munro    "\"master…     1
     ## # ℹ 109 more rows
+```
 
 #### Skrapa webbsidor
 
@@ -1073,11 +1062,11 @@ läser vi in html-koden
 page <- read_html("<a> 1 </a> <b> 2 </b>")
 page
 ```
-
+``` r
     ## {html_document}
     ## <html>
     ## [1] <body>\n<a> 1 </a> <b> 2 </b>\n</body>
-
+```
 sedan extraherar vi taggen `b` med en så kallad
 [CSS-väljare](https://www.w3schools.com/cssref/css_selectors.asp)
 
@@ -1085,18 +1074,18 @@ sedan extraherar vi taggen `b` med en så kallad
 elements <- html_elements(page, css = "b")
 elements
 ```
-
+``` r
     ## {xml_nodeset (1)}
     ## [1] <b> 2 </b>
-
+```
 slutligen drar vi ut innehållet som text
 
 ``` r
 html_text(elements)
 ```
-
+``` r
     ## [1] " 2 "
-
+```
 Svårigheten ligger i allmänhet att hitta en CSS-väljare som plockar ut
 precis vad vi vill ha. I övningen med OS-medaljer vill vi extrahera en
 specifik tabell från en Wikipedia-sida. En tabell i standardformat
@@ -1110,12 +1099,15 @@ elements <- html_elements(page, css = "table")
 elements
 ```
 
+
+```r
     ## {xml_nodeset (5)}
     ## [1] <table class="wikitable sortable"><tbody>\n<tr>\n<th>\n<span style="curso ...
     ## [2] <table class="navbox" style="border-spacing:0; ;"><tbody><tr><td style="p ...
     ## [3] <table class="collapsible autocollapse" style="width:100%;border-spacing: ...
     ## [4] <table class="navbox" style="border-spacing:0; ;"><tbody><tr><td style="p ...
     ## [5] <table class="collapsible autocollapse" style="width:100%;border-spacing: ...
+```
 
 Sidan innehåller fem tabeller där vi vill ha den första. Vi kan
 extrahera denna med
@@ -1123,7 +1115,7 @@ extrahera denna med
 ``` r
 html_table(elements[[1]])
 ```
-
+``` r
     ## # A tibble: 94 × 7
     ##    Pl.   Land            Guld Silver Brons TAM    PEAM
     ##    <chr> <chr>          <int>  <int> <int> <chr> <int>
@@ -1138,6 +1130,7 @@ html_table(elements[[1]])
     ##  9 9     Tyskland          10     11    16 37        8
     ## 10 10    Italien           10     10    20 40        7
     ## # ℹ 84 more rows
+```
 
 men väljer istället att utnyttja `class`-attributet `wikitable` eftersom
 medaljtabellen inte ligger först på alla OS-sidor
@@ -1146,7 +1139,7 @@ medaljtabellen inte ligger först på alla OS-sidor
 elements <- html_elements(page, css = ".wikitable")
 html_table(elements)
 ```
-
+``` r
     ## [[1]]
     ## # A tibble: 94 × 7
     ##    Pl.   Land            Guld Silver Brons TAM    PEAM
@@ -1162,7 +1155,7 @@ html_table(elements)
     ##  9 9     Tyskland          10     11    16 37        8
     ## 10 10    Italien           10     10    20 40        7
     ## # ℹ 84 more rows
-
+```
 Punkten i `.wikitable` anger att det just är `class`-attributet vi skall
 välja efter (se
 [CSS-väljare](https://www.w3schools.com/cssref/css_selectors.asp)). Ett
@@ -1178,7 +1171,7 @@ page <- read_html(url)
 elements <- html_elements(page, css = ".col-md-6")
 html_table(elements[[1]])
 ```
-
+``` r
     ## # A tibble: 33 × 10
     ##    `#`   ``    LAG   ``                M     V     O     F     `+/-` P    
     ##    <chr> <lgl> <chr> <chr>             <chr> <chr> <chr> <chr> <chr> <chr>
@@ -1193,6 +1186,7 @@ html_table(elements[[1]])
     ##  9 9     NA    ""    Mjällby AIF       11    4     3     4     9-9   15   
     ## 10 10    NA    ""    Hammarby          12    3     4     5     15-20 13   
     ## # ℹ 23 more rows
+```
 
 där SelectorGadget har använts för att hitta väljaren `.col-md-6`.
 Notera att kolumnernas namn inte är fullständiga; tabellen är ju inte
@@ -1240,9 +1234,10 @@ Vi kan nu lista databasens tabeller med
 ``` r
 DBI::dbListTables(con)
 ```
-
+``` r
     ## [1] "actors"           "directors"        "directors_genres" "movies"          
     ## [5] "movies_directors" "movies_genres"    "roles"
+```
 
 och skapa en *virtuell* kopia av tabellen `movies` med
 
@@ -1250,7 +1245,7 @@ och skapa en *virtuell* kopia av tabellen `movies` med
 movies <- tbl(con, "movies")
 movies
 ```
-
+``` r
     ## # Source:   table<movies> [?? x 4]
     ## # Database: mysql  [guest@relational.fit.cvut.cz:NA/imdb_small]
     ##        id name             year  rank
@@ -1266,6 +1261,7 @@ movies
     ##  9 116907 Footloose        1984  5.80
     ## 10 124110 Garden State     2004  8.30
     ## # ℹ more rows
+```
 
 Här noterar vi att antalet rader i tabellen är listat som `??`, vilket
 beror på att `dbplyr` ser till att bara hämta så mycket som är
@@ -1275,7 +1271,7 @@ tabellen som en vanlig `tibble` använder vi `collect`
 ``` r
 collect(movies)
 ```
-
+``` r
     ## # A tibble: 36 × 4
     ##        id name             year  rank
     ##     <int> <chr>           <int> <dbl>
@@ -1290,6 +1286,7 @@ collect(movies)
     ##  9 116907 Footloose        1984  5.80
     ## 10 124110 Garden State     2004  8.30
     ## # ℹ 26 more rows
+```
 
 Som ett exempel skapar vi en tabell över alla `Sci-Fi`-filmer i
 databasen med
@@ -1301,7 +1298,7 @@ movies_genres %>%
   left_join(movies, by = c("movie_id" = "id")) %>% 
   collect()
 ```
-
+``` r
     ## # A tibble: 6 × 5
     ##   movie_id genre  name         year  rank
     ##      <int> <chr>  <chr>       <int> <dbl>
@@ -1311,6 +1308,7 @@ movies_genres %>%
     ## 4   254943 Sci-Fi Pi           1998  7.5 
     ## 5   313459 Sci-Fi Star Wars    1977  8.80
     ## 6   350424 Sci-Fi Vanilla Sky  2001  6.90
+```
 
 Vi kan även se den SQL-fråga som genererade resultatet med `show_query`
 
@@ -1320,7 +1318,7 @@ movies_genres %>%
   left_join(movies, by = c("movie_id" = "id")) %>% 
   show_query()
 ```
-
+``` r
     ## <SQL>
     ## SELECT `LHS`.*, `name`, `year`, `rank`
     ## FROM (
@@ -1330,7 +1328,7 @@ movies_genres %>%
     ## ) `LHS`
     ## LEFT JOIN `movies`
     ##   ON (`LHS`.`movie_id` = `movies`.`id`)
-
+```
 Slutligen avslutar vi med att stänga ned anslutningen för att inte
 belasta servern i onödan
 
