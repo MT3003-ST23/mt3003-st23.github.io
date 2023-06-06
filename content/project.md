@@ -11,7 +11,7 @@ Vid val av datamaterial bör du tänka på följande:
 
 - Är du osäker, fråga på Discord!
 
-Deadline för färdigt projekt är 21/8, men innan 7/8 vill vi att ni kort beskriver era projektideer i en issue till ert projektbibliotek på GitHub. Vi kommer då återkomma med feedback.
+Deadline för färdigt projekt är 20/8, men innan 6/8 vill vi att ni kort beskriver era projektideer i en issue till ert projektbibliotek på GitHub. Vi kommer då återkomma med feedback.
 
 Det färdiga projektet skall publiceras som filen `README.md` i ert projektbibliotek (`https://github.com/MT3003-ST23/pr_xxx`) med tillhörande datafiler och eventuella skript-filer. Om ni känner er begränsade av `.md`-formatet och föredrar `.html`, kontakta kursansvarig.
 
