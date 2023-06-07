@@ -10,7 +10,7 @@ Vi kommer att täcka grundläggande statistiska koncept och metoder för att
 bearbeta och analysera data. Varje vecka erbjuds frivilliga övningar för att fördjupa förståelsen av
 kursmaterialet. Jag rekommenderar starkt att ni gör dessa uppgifter! Övningarna
 hittar ni under [Veckoschema](/schedule). Det finns 
-fyra obligatoriska **laborationer** och en **inlämningsuppgift**. Dessutom kommer det att finnasen **tentamen** mot slutet av kursen.
+fyra obligatoriska **laborationer** och en **inlämningsuppgift**. Dessutom kommer det att finnas en **tentamen** mot slutet av kursen.
 För att klara kursen måste man framgångsrikt slutföra laborationerna, inlämningen och tentan.
 
 Nedan hittar du information gällande kursen. 
