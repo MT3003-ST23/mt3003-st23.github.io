@@ -40,7 +40,7 @@ Deadline individuell uppgift **20/08/2023**.
   - TA: Betty Frankl **betty.frankl@gmail.com**
   - TA: Emil Erikson **emilerikson@outlook.com**
   - TA: Jakob Torgander **jakob.torgander@math.su.se**
-  - TA: Leo Levenius **leo.levenius@gmail.com**
+  - TA: Leo Levenius **leo.levenius@math.su.se**
 
 ## Discord
 Här kan ni ställa alla era frågor.
