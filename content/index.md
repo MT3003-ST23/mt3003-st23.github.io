@@ -38,7 +38,7 @@ Deadline individuell uppgift **20/08/2023**.
 
   - Kursansvarig: Taariq Nazar **taariq.nazar@math.su.se**
   - TA: Betty Frankl **betty.frankl@gmail.com**
-  - TA: Emil Erikson **emilerikson@outlook.com**
+  - TA: Emil Erikson **emil.erikson@math.su.se**
   - TA: Jakob Torgander **jakob.torgander@math.su.se**
   - TA: Leo Levenius **leo.levenius@math.su.se**
 
