@@ -30,9 +30,8 @@ Deadline för kamratgranskning är onsdag efter inlämning.
 Deadline individuell uppgift **20/08/2023**.
 
 ## Tentamen (elektronisk)
-  - Ordinarie Tentamen: **TBD**
-  - Omtentamen : **TBD**
-
+  - Ordinarie Tentamen: **24/08/2023, 9:00-11:00**
+  - Omtentamen : **26/09/2023 9:00-11:00**
 
 # Kontakt
 
