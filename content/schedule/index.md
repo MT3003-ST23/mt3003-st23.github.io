@@ -641,7 +641,7 @@ voteringar). Återskapa motsvarigheten till nedanstående figur, som
 illustrerar de 10000 V-rösterna i förhållande till Aminehs röst (endast
 voteringar där Amineh röstat skall räknas)
 
-![](index_files/figure-gfm/unnamed-chunk-26-1.png)<!-- -->
+![](/public/img/unnamed-chunk-26-1.png)<!-- -->
 
 Tips: Välj ut Aminehs röster ur `votering_vild` och skapa en ny tabell
 med kolumner `votering_id` och `rost` (den senare kan du gärna döpa om
