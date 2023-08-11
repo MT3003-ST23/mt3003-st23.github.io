@@ -17,12 +17,17 @@ Formuläret kommer att vara tillgängligt t.o.m. **22/08/2023**.
   förbjudet att sammarbeta med andra personer eller kursare.
 
 ### Upplägg
+Tentan kommer ges på distans och kommer att vara i samma format som
+laborationerna. 
+
 Klockan 08:50 kommer tenta-repot att publiceras på kursens GitHub-sida. 
 Precis som ni gjort under laborationerna, ska ni skapa ett nytt projekt på Posit Cloud med ert tenta-repo.
 Som en del av detta steg, behöver ni ta en bild på en id-handling 
 (t.ex. ID-kort eller pass) tillsammans med ert projektnamn på Posit Cloud.
 Efter tentan har ni 30 minuter på er att ladda upp ert projekt på GitHub.
 Observera att alla commits som görs efter 11:30 kommer att underkännas.
+
+**Jag (Taariq Nazar) och ett par amanuensera kommer att vara tillgängliga under hela tentantiden via Discord.**
 
 Tentamen består av 2 uppgifter med 3 deluppgifter var. Varje deluppgift är värd 2 poäng,
 vilket innebär att den totala poängsumman är 12 poäng. Betyget du får kommer att 
