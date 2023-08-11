@@ -1,6 +1,6 @@
 # Välkommen till MT3003 ST23
 
-::ToStart
+::ToTenta
 ::
 
 Välkommen till kursen introduktion till statistisk databehandling! Om du inte
