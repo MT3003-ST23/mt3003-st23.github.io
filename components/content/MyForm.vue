@@ -61,7 +61,7 @@
 
 <script setup>
 // Check if form has been submitted by cookie or something and hide it if it is
-const submitted = useCookie("form-submitted",
+const submitted = useCookie("tenta-form-submitted",
     {
     default: () => false,
 })
