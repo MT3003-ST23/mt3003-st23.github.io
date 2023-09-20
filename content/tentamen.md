@@ -5,7 +5,7 @@ title: 'Tentamen'
 # Inför Tentan
 
 Börja med att registrera er till tentan genom att fylla i fomuläret nedan.
-Formuläret kommer att vara tillgängligt t.o.m. **22/08/2023**.
+Formuläret kommer att vara tillgängligt t.o.m. **22/09/2023**.
 
 ### Formulär
 ::MyForm
